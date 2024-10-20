@@ -1,0 +1,9 @@
+:root{
+    --cor-titulo: var(--bs-primary);
+    --cor-subtitulo: var(--bs-gray);
+    --cor-texto: var(--bs-dark);
+    --cor-destaque: var(--bs-success);
+    --cor-alerta: var(--bs-alert);
+    --cor-background: var(--bs-light);
+    --cor-borda: rgb(230 230 230);
+}
