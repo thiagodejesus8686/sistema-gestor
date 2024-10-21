@@ -33,6 +33,11 @@
                 </li>
             </ul>
         </li>
-        <li class="list-group-item"><a href="">Ajuda</a></li>
+        <li class="list-group-item">
+            <a href="">
+                <i class="fa fa-exclamation-circle"></i>
+                <span class="desc">Ajuda</span>
+            </a>
+        </li>
     </ul>
 </aside>

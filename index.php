@@ -1,6 +1,7 @@
+<?php
 
-        <?php include_once "./app/views/require/head.php"; ?>
+    include_once "./app/views/require/head.php";
 
-            
-        
-        <?php include_once "./app/views/require/footer.php"; ?>
+        //lógica aqui
+    
+    include_once "./app/views/require/footer.php";

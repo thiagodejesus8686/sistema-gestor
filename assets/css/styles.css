@@ -2,7 +2,6 @@
 
 body{
     background: #efefef;
-    font-size: 14pt;
 }
 
 #main{
@@ -10,14 +9,43 @@ body{
     height: 100vh;
     overflow: hidden;
     background: #eff6fd;
+    --size: 250px;
+}
+
+#main.collapsed{
+    --size: 70px;
 }
 
 #header{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
     width: 100%;
     height: 50px;
     line-height: 50px;
-    background: var(--cor-background);
+    padding: 3px 0;
+    background: var(--bs-white);
     border-bottom: 1px solid var(--cor-borda);
+}
+
+#header #brand{
+    display: block;
+    position: relative;
+    width: var(--size);
+    line-height: 50px;
+    text-align: center;
+    color: var(--cor-titulo);
+    text-decoration: none;
+}
+
+#header #headerContent{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #section{
@@ -33,9 +61,10 @@ body{
 #section #aside{
     display: block;
     position: relative;
-    width: 250px;
+    width: var(--size);
     background: var(--bs-white);
     border-right: 1px solid var(--cor-borda);
+    /* more aside styles in aside.css file */
 }
 
 #section #content{
