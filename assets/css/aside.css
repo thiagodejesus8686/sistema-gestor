@@ -12,6 +12,14 @@
     line-height: 200%;
 }
 
+#aside li.list-group-item.open-submenu:after{
+    content: "\f105";
+    font-family: 'Font Awesome 6 Free';
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
 #aside ul.submenu li.list-group-item{
     background: var(--bs-light);
 }
