@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <main id="main" class="collapsed">
+    <main id="main" class="">
         
         <?php include_once "./app/views/require/header.php"; ?>
 

@@ -1,0 +1,18 @@
+[
+    {
+        "id":"user671d7a01ce365",
+        "user":"admin",
+        "pass":"b77e616cd03f632677bb4dfe058581ac",
+        "dateSignIn":"2024-10-26 20:22:00",
+        "profile":"master",
+        "status":1
+    },
+    {
+        "id":"user671d7a136e272",
+        "user":"thiago.jesus",
+        "pass":"8d086b5976803ef6ab8fdac6ff1aeaf7",
+        "dateSignIn":"2024-10-26 20:22:00",
+        "profile":"master",
+        "status":1
+    }
+]

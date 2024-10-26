@@ -10,14 +10,8 @@
 #aside li.list-group-item{
     padding: 3px;
     line-height: 200%;
-}
-
-#aside li.list-group-item.open-submenu:after{
-    content: "\f105";
-    font-family: 'Font Awesome 6 Free';
     display: block;
-    position: absolute;
-    right: 0;
+    position: relative;
 }
 
 #aside ul.submenu li.list-group-item{
@@ -28,6 +22,7 @@
     color: var(--cor-titulo);
     text-decoration: none;
     display: block;
+    position: relative;
     border-radius: 3px;
     padding: 0;
     margin: 0;
@@ -36,6 +31,24 @@
     line-height: 40px;
     animation: fadeIn .6s 1 ease-in-out;
     transition: all, .4s ease-in-out;
+}
+
+#aside .open-submenu > a:before{
+    content: "\f106";
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 600;
+    display: block;
+    position: absolute;
+    width: 25px;
+    line-height: 40px;
+    right: 0;
+    text-align: center;
+    color: var(--bs-primary);
+    transition: all, .4s ease-in-out;
+}
+
+#aside .open-submenu > a.collapsed:before{
+    content: "\f105";
 }
 
 #aside a:hover{
@@ -47,19 +60,21 @@
     width: 60px;;
 }
 
-#aside a i.fa{
+#aside a i.fa,
+#aside a span.desc{
     display: inline-block;
     position: relative;
-    width: 60px;
     height: 30px;
     line-height: 30px;
+}
+
+#aside a i.fa{
+    width: 60px;
     text-align: center;
     border-radius: 3px;
 }
 
 #aside a span.desc{
-    display: inline-block;
-    position: relative;
     width: calc(100% - 80px);
     padding: 0 5px;
     transition: all, .4s linear;
