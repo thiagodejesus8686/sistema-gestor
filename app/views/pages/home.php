@@ -1,10 +1,58 @@
+<style>
+    #folders{
+        display: block;
+        position: relative;
+    }
+    #folders .folder{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: rgb(255 255 255);
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        box-shadow: 3px 3px 10px rgb(0 0 0 / 15%);
+        text-decoration: none;
+    }
+    #folders .folder i.fa{
+        font-size: 2rem;
+        color: rgb(145 145 145);
+    }
+    #folders .folder small{
+        color: rgb(44 44 44);
+    }
+</style>
+
 <section class="">
-    <div class="card">
-        <div class="card-header">
+    <div class="card border-0">
+        <div class="card-header bg-transparent">
             <h1>Gerenciar Projetos</h1>
         </div>
         <div class="card-body">
-            
+            <div class="d-flex justify-content-around" style="column-gap: 10px;">
+                <a href="" class="btn btn-primary" title="Registrar cliente"><i class="fa fa-plus-circle"></i></a>
+                <div class="btn-group">
+                    <button class="btn btn-primary" title="Exibir cards"><i class="fa fa-th"></i></button>
+                    <button class="btn btn-primary" title="Exibir lista"><i class="fa fa-list"></i></button>
+                </div>
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Digite o cliente aqui" />
+                    <button class="btn btn-primary">
+                        <i class="fa fa-search"></i> Pesquisar
+                    </button>
+                </div>
+            </div>
+            <hr />
+            <br />
+            <!-- criar módulos para visualizar clientes -->
+            <div id="folders">
+                <a href="" class="folder">
+                    <i class="fa fa-folder-open"></i>
+                    <small>Cliente número 1</small>
+                </a>
+            </div>
         </div>
     </div>
 </section>
